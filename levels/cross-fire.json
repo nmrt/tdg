@@ -1,0 +1,49 @@
+{
+
+  "level": {
+    "width": 19 ,
+    "height": 19
+  } ,
+
+  "enemyTypes": {
+    "tank": {
+      "color": "red" ,
+      "hp": 100 ,
+      "speed": 2
+    }
+  } ,
+
+  "spawnPoints": [
+    {
+      "position": { "x": 9, "y": 0 } ,
+      "enemyType": "tank" ,
+      "frequency": 1 ,
+      "limit": 1 ,
+      "trajectory": [
+        { "x": 9, "y": 18 }
+      ]
+    }
+  ] ,
+
+  "cannons": [
+    {
+      "position": { "x": 18, "y": 9 } ,
+      "enemyTypes": ["tank"] ,
+      "attack": {
+        "damage": 1 ,
+        "frequency": 10 ,
+        "radius": 9
+      }
+    } ,
+    {
+      "position": { "x": 0, "y": 9 } ,
+      "enemyTypes": ["tank"] ,
+      "attack": {
+        "damage": 1 ,
+        "frequency": 10 ,
+        "radius": 9
+      }
+    }
+  ]
+
+}

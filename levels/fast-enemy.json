@@ -1,0 +1,40 @@
+{
+
+  "level": {
+    "width": 19 ,
+    "height": 19
+  } ,
+
+  "enemyTypes": {
+    "ninja": {
+      "color": "red" ,
+      "hp": 1 ,
+      "speed": 10
+    }
+  } ,
+
+  "spawnPoints": [
+    {
+      "position": { "x": 0, "y": 0 } ,
+      "enemyType": "ninja" ,
+      "frequency": 1 ,
+      "limit": 1 ,
+      "trajectory": [
+        { "x": 0, "y": 18 }
+      ]
+    }
+  ] ,
+
+  "cannons": [
+    {
+      "position": { "x": 9, "y": 9 } ,
+      "enemyTypes": ["ninja"] ,
+      "attack": {
+        "damage": 1 ,
+        "frequency": 10 ,
+        "radius": 9
+      }
+    }
+  ]
+
+}
