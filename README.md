@@ -1,4 +1,4 @@
-Tower Defence *Game*
+Tower Defense *Game*
 ====================
 
 Exploration of LimeJS, Closure and Canvas.
