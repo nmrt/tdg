@@ -10,8 +10,8 @@ tdg.Projectile = function() {
 
   tdg.Layer.call(this) ;
 
-  var l = tdg.getScaled(0.1) ;
-  var s = tdg.getScaled(0.01) ;
+  var l = tdg.getScaled(0.2) ;
+  var s = tdg.getScaled(0.03) ;
   this._body = new lime.Sprite ;
 
   this._body.setAnchorPoint( 0, 0 ) ;
