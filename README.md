@@ -10,5 +10,5 @@ local *cross-origin* requests (`file:` protocol) or run a `httpd`. More info:
 [How to run things
 locally](https://github.com/mrdoob/three.js/wiki/How-to-run-things-locally).
 
-There are different configurations in `levels/`. Just replace the contents of
-`preferences.json` with one of them and reload `tdg.html`. ;)
+There are different configurations in `levels/`. Specify a level with query
+parameter like `?level=cross-fire` or default one will be used.

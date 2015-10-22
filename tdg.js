@@ -10,6 +10,7 @@ goog.require('lime.Label') ;
 goog.require('lime.CoverNode') ;
 goog.require('goog.math.Coordinate') ;
 goog.require('goog.net.XhrIo') ;
+goog.require('goog.uri.utils') ;
 goog.require('tdg.Layer') ;
 goog.require('tdg.Enemy') ;
 goog.require('tdg.SpawnPoint') ;
@@ -18,8 +19,11 @@ goog.require('lime.animation.FadeTo') ;
 
 // loading preferences
 tdg.load = function() {
+  var level = goog.uri.utils.getParamValue(window.location.search, 'level') ||
+    'default';
+
   goog.net.XhrIo.send(
-    'preferences.json' ,
+    'levels/' + level + '.json' ,
     function(e) {
       tdg.prefs = this.getResponseJson() ;
       tdg.start() ;
