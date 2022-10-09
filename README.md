@@ -3,6 +3,10 @@ Tower Defense *Game*
 
 Exploration of LimeJS, Closure and Canvas.
 
+https://nmrt.github.io/tdg/  
+https://nmrt.github.io/tdg/?level=cross-fire  
+https://nmrt.github.io/tdg/?level=fast-enemy
+
 Tested in Firefox and Chromium (recent versions).
 
 In order for it to work, you'll need either to configure the browser to accept
